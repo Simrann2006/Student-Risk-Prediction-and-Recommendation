@@ -5,6 +5,9 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../model')))
 
 from student_risk_prediction_system import load_dataset, train_all_models, FEATURES
 
